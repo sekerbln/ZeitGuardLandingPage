@@ -54,6 +54,10 @@ section.main-content {
   flex-direction: row;
 }
 
+section.second-content {
+           margin-left: 40px;
+         }
+
 #sidebar-content-container {
   display: flex;
   flex-direction: row;
