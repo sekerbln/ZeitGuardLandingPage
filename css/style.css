@@ -34,7 +34,7 @@ body {
 
 .sidebar {
   margin-top: 200px;
-  margin-left: 20px;
+  margin-left: 40px;
   width: 200px;
   left: -200px;
   transition: left 0.3s ease-in-out;
