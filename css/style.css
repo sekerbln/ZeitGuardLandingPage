@@ -148,6 +148,17 @@ h1.logo {
   width: 250px;
 }
 
+@media (max-width: 974.32px) {
+  section.main-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  section.main-content > * {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+
 @media (min-width: 769px) {
   .sidebar {
     transform: translateX(0);
