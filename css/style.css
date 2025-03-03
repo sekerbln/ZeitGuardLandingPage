@@ -185,9 +185,10 @@ h1.logo {
 }
 
 .extra-content {
-  flex-basis: 38.2%;
+  width: 25%;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
 
 @media (max-width: 974.32px) {
