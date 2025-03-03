@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+  <meta name="description" content="ZeitGuard helps students manage procrastination and improve learning efficiency.">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -38,24 +38,30 @@
   <button id="sidebar-toggle-button">hide</button>
 </div>
 
+<div id="sidebar-content-container">
   <div class="sidebar">
     <nav class="nav">
       <a href="#">Home</a>
       <a href="#">Features</a>
       <a href="#">About</a>
     </nav>
+  </div>
+
+  <div class="content">
+    <section class="main-content">
+      <div class="image-container">
+        <img src="images/Feature Image.png" alt="A preview of ZeitGuard feature">
+        <div class="text-content">
+          <h2>ZeitGuard: The Procrastination App for Students</h2>
+          <p>Struggling with procrastination? ZeitGuard helps students learn effectively</p>
+        </div>
+      </div>
+      <div class="extra-content"></div>
+
 </div>
 
-<div class="content">
-  <section>
-    <h2>ZeitGuard: The Procrastination App for Students</h2>
-    <p>Struggling with procrastination? ZeitGuard helps students learn effectively...</p>
-  </section>
-  <section>
-    <h2>How ZeitGuard Helps You Overcome Procrastination?</h2>
-    <p>...</p>
-  </section>
-  </div>
+
+
 
   <script>
     const sidebar = document.querySelector('.sidebar');
@@ -75,21 +81,6 @@
     });
   </script>
 
-<script>
-  const button = document.getElementById('sidebar-toggle-button');
-  button.addEventListener('click', () => {
-    const sidebar = document.getElementById('my-sidebar');
-    if (sidebar) {
-      if (sidebar.style.display === 'none') {
-        sidebar.style.display = 'block';
-        button.textContent = 'hide';
-      } else {
-        sidebar.style.display = 'none';
-        button.textContent = 'menu';
-      }
-    }
-  });
-</script>
   <script src="script.js"></script>
 </body>
 

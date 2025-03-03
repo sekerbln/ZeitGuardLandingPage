@@ -32,6 +32,12 @@ body {
   font-family: 'PP Telegraf', sans-serif;
 }
 
+#sidebar-content-container {
+  display: flex;
+  flex-direction: row;
+  width: 4203px;
+}
+
 .sidebar {
   margin-top: 200px;
   margin-left: 40px;
@@ -79,9 +85,38 @@ h1.logo {
 }
 
 .content {
-  margin-left: 270px;
-  padding: 40px;
-  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 250px);
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+}
+
+.text-content {
+  text-align: center;
+  max-width: 750px;
+}
+
+.extra-content {
+  width: 250px;
 }
 
 @media (min-width: 769px) {
