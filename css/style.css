@@ -32,6 +32,23 @@ body {
   font-family: 'PP Telegraf', sans-serif;
 }
 
+p {
+  line-height: 1.2;
+}
+
+h2 {
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+section.main-content {
+  flex-direction: row;
+}
+
 #sidebar-content-container {
   display: flex;
   flex-direction: row;
@@ -102,17 +119,29 @@ h1.logo {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
+  margin-left: 40px;
+  gap: 20px;
+}
+
+.image-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  gap: 20px;
 }
 
 .image-container img {
   width: 100%;
   max-width: 750px;
   height: auto;
+  align-items: flex-start;
 }
 
 .text-content {
   text-align: center;
   max-width: 750px;
+  text-align: left;
 }
 
 .extra-content {
@@ -138,3 +167,5 @@ h1.logo {
   cursor: pointer;
   line-height: 1;
 }
+
+
