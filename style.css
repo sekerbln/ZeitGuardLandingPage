@@ -1,17 +1,26 @@
 @font-face {
   font-family: 'PP Telegraf';
-  src: url('fonts/PPTelegraf-Regular.woff2') format('woff2'),
-  url('fonts/PPTelegraf-Regular.woff') format('woff');
+  src: url('fonts/PPTelegraf-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PP Telegraf';
-  src: url('fonts/PPTelegraf-Bold.woff2') format('woff2'),
-  url('fonts/PPTelegraf-Bold.woff') format('woff');
+  src: url('fonts/PPTelegraf-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "PP Telegraf", sans-serif;
+  height: 100%;
 }
 
 body {
