@@ -32,20 +32,29 @@ body {
 }
 
 .sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 250px;
-  height: 100vh;
-  background: white;
-  border-right: 1px solid #ddd;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
+  width: 200px;
+  left: -200px;
+  transition: left 0.3s ease-in-out;
   gap: 200px;
+}
+#sidebar-toggle-button {
+  top: 20px;
+  transform: none;
+  right: 10px;
+  transition: right 0.3s ease-in-out;
+  position: absolute;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eee;
+  color: #333;
+  z-index: 10;
 }
 
 h1.logo {
+  margin-left: 10px;
+  height: 43.5px;
   font-family: 'PP Telegraf', sans-serif;
 }
 
@@ -62,4 +71,23 @@ h1.logo {
   margin-left: 270px;
   padding: 40px;
   max-width: 800px;
+}
+
+@media (min-width: 769px) {
+  .sidebar {
+    transform: translateX(0);
+    display: flex;
+  }
+}
+
+.sidebar-toggle-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 101;
+  padding: 10px;
+  background-color: blue;
+  color: black;
+  border: none;
+  cursor: pointer;
 }

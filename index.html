@@ -33,13 +33,14 @@
 </script>
 
 <body>
+  <h1 class="logo">ZeitGuard</h1>
+  <button id="sidebar-toggle-button">menu</button>
   <div class="sidebar">
-    <h1 class="logo">ZeitGuard</h1>
     <nav class="nav">
       <a href="#">Home</a>
       <a href="#">Features</a>
       <a href="#">About</a>
-  </nav>
+    </nav>
 </div>
 
 <div class="content">
@@ -52,6 +53,25 @@
     <p>...</p>
   </section>
   </div>
+
+  <script>
+    const sidebar = document.querySelector('.sidebar');
+    const button = document.querySelector('.sidebar-toggle-button');
+
+    button.addEventListener('click', () => {
+      const isHidden = window.getComputedStyle(sidebar)['display'] === 'none';
+      if (isHidden) {
+        sidebar.style.display = 'flex';
+        sidebar.style.transform = 'translateX(0)';
+      } else {
+        sidebar.style.transform = 'translateX(-100%)';
+        setTimeout(() => {
+          sidebar.style.display = 'none';
+        }, 300);
+      }
+    });
+  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
