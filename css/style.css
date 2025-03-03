@@ -30,6 +30,7 @@ body {
   flex-direction: column;
   margin: 0;
   font-family: 'PP Telegraf', sans-serif;
+  gap: 40px;
 }
 
 p {
