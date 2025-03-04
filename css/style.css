@@ -39,7 +39,7 @@ p {
 
 h2 {
   line-height: 1;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 img {
@@ -173,6 +173,11 @@ h1.logo {
   align-items: flex-start;
 }
 
+.feature-image-container {
+  width: 30%;
+  margin-top: 20px;
+}
+
 .text-content {
   align-self: flex-start;
   max-width: 750px;
@@ -183,7 +188,22 @@ h1.logo {
   margin-left: 0px;
   margin-right: 0px;
   width: 100%;
+  margin-top: 0px;
 }
+
+.feature-text-content {
+  align-self: flex-start;
+  max-width: 750px;
+  text-align: left;
+  display: block;
+  position: static;
+  float: none;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  margin-top: 10px;
+}
+
 
 .extra-content {
   width: 25%;
