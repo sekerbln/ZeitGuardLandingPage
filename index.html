@@ -48,7 +48,7 @@
   </div>
 
   <div class="content">
-    <section class="main-content">
+    <div class="main-content">
       <div class="main-image-container">
         <img src="images/Feature Image.png" alt="A preview of ZeitGuard feature">
         <div class="text-content">
@@ -71,8 +71,9 @@
             </div>
           </div>
         </div>
-    </section>
-    <section class="second-content">
+    </div>
+    </div>
+    <div class="second-content">
       <h2>How ZeitGuard Helps You Overcome Procrastination?</h2>
       <div class="feature-content">
         <div class="image-container" style="width: 30%; margin-left: 0px;">
@@ -98,8 +99,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="second-content">
+    </div>
+    <div class="second-content">
       <h2>How ZeitGuard Making Your Studies More Effective?</h2>
       <div class="feature-content">
         <div class="image-container" style="width: 30%; margin-left: 0px;">
@@ -119,33 +120,13 @@
         </div>
 
       </div>
-    </section>
+    </div>
 
 
 </div>
 
+  <script src="js/app.js"></script>
 
-
-
-  <script>
-    const sidebar = document.querySelector('.sidebar');
-    const button = document.querySelector('.sidebar-toggle-button');
-
-    button.addEventListener('click', () => {
-      const isHidden = window.getComputedStyle(sidebar)['display'] === 'none';
-      if (isHidden) {
-        sidebar.style.display = 'flex';
-        sidebar.style.transform = 'translateX(0)';
-      } else {
-        sidebar.style.transform = 'translateX(-100%)';
-        setTimeout(() => {
-          sidebar.style.display = 'none';
-        }, 300);
-      }
-    });
-  </script>
-
-  <script src="script.js"></script>
 </body>
 
 </html>
