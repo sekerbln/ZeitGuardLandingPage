@@ -133,7 +133,7 @@ h1.logo {
 
 .main-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: calc(100% - 0px);
   align-items: stretch;
 }
