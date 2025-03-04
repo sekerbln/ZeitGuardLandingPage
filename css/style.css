@@ -84,8 +84,13 @@ section.second-content {
   padding-right: 20px;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: stretch;
   gap: 40px;
+}
+
+.content > section {
+  width: 100%;
 }
 
 #sidebar-toggle-button {
@@ -129,7 +134,12 @@ h1.logo {
 .main-content {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 250px);
+  width: calc(100% - 0px);
+  align-items: stretch;
+}
+
+.main-content > section {
+  width: 100%;
 }
 
 .main-image-container {
@@ -207,10 +217,10 @@ h1.logo {
 
 .feature-content {
   align-self: flex-start;
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 40px;
