@@ -58,6 +58,7 @@ section.main-content {
 
 section.second-content {
   margin-left: 0;
+  width: fit-content;
 }
 
 #sidebar-content-container {
@@ -202,6 +203,17 @@ h1.logo {
   margin-right: 0px;
   width: 100%;
   margin-top: 10px;
+}
+
+.feature-content {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 40px;
 }
 
 
